@@ -64,7 +64,7 @@ function semak(bab){
        yang menyebut "Jadual". Jadual tanpa soalan yang merujuknya tidak pernah dilihat
        murid, dan soalan yang menyebut "Jadual" tanpa jadual kehilangan datanya. */
     const sebutJadual = (a.soalan || []).concat(a.bos ? [a.bos] : [])
-      .some(q => /\bJadual\b/.test(String(q.t) + " " + String(q.arahan || "")));
+      .some(q => /\bJadual \d/.test(String(q.t) + " " + String(q.arahan || "")));
     const adaJadual = typeof spekL === "string" && /<figcaption>Jadual/.test(spekL);
     if(adaJadual) lihat(sebutJadual, `${di}: ada jadual tetapi tiada soalan yang merujuk "Jadual"`);
     else if(sebutJadual) lihat(false, `${di}: soalan merujuk "Jadual" tetapi hentian ini tiada jadual`);

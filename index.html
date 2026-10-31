@@ -1970,7 +1970,7 @@ function mulaHarian(){
 function lampiranUntuk(q,lam){
   if(!lam||lam.indexOf("<figure")<0) return lam;
   var teks=[q.t,q.arahan].concat(q.p||[]).join(" ");
-  return /\b(rajah|petikan|jadual)\b/i.test(teks) ? lam : "";
+  return /\b(rajah|petikan|jadual \d)\b/i.test(teks) ? lam : "";
 }
 function bilPerkataan(teks){
   return String(teks||"").replace(/<[^>]*>/g," ").replace(/&[a-z#0-9]+;/gi," ")
