@@ -1,10 +1,10 @@
 /* Tangkapan skrin paparan murid untuk semakan visual (bukan ujian lulus/gagal).
      node tools/tangkap-skrin.js e1b1 [gelap]
-   Disimpan dalam ../jejakenglish-skrin/. Perlu pelayan 8833. */
+   Disimpan dalam ../jejakkimia-skrin/. Perlu pelayan 8833. */
 const { chromium } = require("playwright");
 const fs = require("fs");
-const bab = process.argv[2] || "e1b1", gelap = process.argv.includes("gelap");
-const KELUAR = "../jejakenglish-skrin/";
+const bab = process.argv[2] || "k4b1", gelap = process.argv.includes("gelap");
+const KELUAR = "../jejakkimia-skrin/";
 (async () => {
   let html = fs.readFileSync("index.html", "utf8");
   fs.writeFileSync("index-uji.html", html.replace("SOALAN_SET=6", "SOALAN_SET=9"));
@@ -16,7 +16,7 @@ const KELUAR = "../jejakenglish-skrin/";
   p.on("pageerror", e => console.log("pageerror: " + e.message));
   await p.goto("http://localhost:8833/index-uji.html?demo=murid", { waitUntil: "domcontentloaded" });
   await p.waitForTimeout(1500);
-  await p.fill("#namaBebas", "Aina"); await p.evaluate(()=>{const x=document.querySelector('[data-ting="1"]');if(x)x.click();});
+  await p.fill("#namaBebas", "Aina"); await p.evaluate(t=>{const x=document.querySelector(`[data-ting="${t}"]`);if(x)x.click();}, bab[1]);
   await p.click("text=Mula main"); await p.waitForTimeout(900);
   const sfx = (gelap ? "-gelap" : "");
   await p.screenshot({ path: KELUAR + bab + "-peta" + sfx + ".png", fullPage: false });
@@ -36,7 +36,8 @@ const KELUAR = "../jejakenglish-skrin/";
       for (const a of window.BANK[id].aras) for (const q of a.soalan.concat([a.bos])) if (s(q.t) === tq) return q; return null; }, { id: bab, tq });
     if (!q) { console.log("tak jumpa: " + tq); break; }
     if (q.gbr) await ambil("gambar");
-    if (/Figure 1/.test(q.t)) await ambil("figure", true);
+    if (/Rajah 1/.test(q.t)) await ambil("rajah", true);
+    if (/Jadual 1/.test(q.t)) await ambil("jadual", true);
     if (/Text 1/.test(q.t)) await ambil("teks", true);
     if (q.dengar) await ambil("dengar");
     const opt = await p.$$eval('[data-f^="opt-"]', els => els.map(e => ({ f: e.getAttribute("data-f"), t: e.querySelector("span:last-child").innerText.replace(/\s+/g, " ").trim() })));
