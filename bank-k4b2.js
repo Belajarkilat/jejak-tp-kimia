@@ -2,7 +2,7 @@
    DIJANA. Jangan sunting fail ini terus; sunting sumber/k4b2.js
    kemudian jalankan: node bina.js k4b2
 
-   Standard Prestasi disalin kata demi kata daripada DSKP KSSM Kimia
+   Standard Prestasi diterjemah daripada deskriptor DSKP KSSM Kimia (versi Bahasa Inggeris)
    Tingkatan 4, Bahagian Pembangunan Kurikulum.
 */
 window.BANK = window.BANK || {};

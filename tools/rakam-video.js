@@ -4,7 +4,7 @@
 
      node tools/rakam-video.js <folder-keluar> [muzik.aac]
    Pelayan: python -m http.server 8822 (dalam folder ini). Perlu playwright dan ffmpeg dalam PATH.
-   Hasil: <folder-keluar>/video-demo-sejarah.mp4 dan poster video-demo-poster-sejarah.jpg */
+   Hasil: <folder-keluar>/video-demo-kimia.mp4 dan poster video-demo-poster-kimia.jpg */
 const { chromium } = require("playwright");
 const fs = require("fs");
 const path = require("path");
@@ -13,7 +13,7 @@ const { execFileSync } = require("child_process");
 const KELUAR = path.resolve(process.argv[2] || ".");
 const MUZIK = process.argv[3];
 const BASE = process.env.BASE || "http://localhost:8822";
-const BAB = "s3b1";           // Bab 1 ialah percuma; ada garis masa dalam hentian 2
+const BAB = "k4b2";           // Bab 2 T4 percuma; Jadual 1 dalam hentian 2, Rajah 1 dalam hentian 3
 const FRAMES = path.join(KELUAR, "_bingkai");
 fs.rmSync(FRAMES, { recursive: true, force: true });
 fs.mkdirSync(FRAMES, { recursive: true });
@@ -75,14 +75,14 @@ const PASANG = `(() => {
   await cdp.send("Page.startScreencast", { format: "jpeg", quality: 88, maxWidth: 720, maxHeight: 1558, everyNthFrame: 1 });
 
   /* 1. kad pembuka */
-  await kad(`<img src="${logo}" alt=""><h1>Jejak TP Kimia<em>Murid bermain, TP auto dijana.</em></h1><p>Kimia KSSM Tingkatan 1 hingga 5. Ikut Standard Prestasi DSKP.</p>`);
+  await kad(`<img src="${logo}" alt=""><h1>Jejak TP Kimia<em>Murid bermain, TP auto dijana.</em></h1><p>Kimia KSSM Tingkatan 4 dan 5. Ikut Standard Prestasi DSKP.</p>`);
   await tunggu(5500);
   await kad(null); await tunggu(500);
 
   /* 2. skrin nama dan peta */
-  await kap("Murid bermain Sejarah di telefon seperti permainan video.");
+  await kap("Murid bermain Kimia di telefon seperti permainan video.");
   await p.click("#namaBebas"); await p.type("#namaBebas", "Aina", { delay: 160 }); await tunggu(500);
-  await p.evaluate(() => { const b = document.querySelector('[data-ting="3"]'); if (b) b.click(); });
+  await p.evaluate(() => { const b = document.querySelector('[data-ting="4"]'); if (b) b.click(); });
   await tunggu(700);
   await p.click("text=Mula main"); await tunggu(2200);
 
@@ -104,7 +104,7 @@ const PASANG = `(() => {
     await tunggu(jeda.baca);
     if (cari.j === "pilih") await p.click(`[data-f="${keOpt(cari.p[cari.b])}"]`);
     else if (cari.j === "banyak" || cari.j === "susun") for (const i of cari.b) { await p.click(`[data-f="${keOpt(cari.p[i])}"]`); await tunggu(380); }
-    else if (cari.j === "buka") await p.fill('[data-f="buka"]', "Perjanjian London 1824 membahagikan Alam Melayu kepada pengaruh British dan Belanda. Pembahagian ini menyebabkan Kepulauan Melayu terbahagi dua.");
+    else if (cari.j === "buka") await p.fill('[data-f="buka"]', "Model atom natrium: nukleus 11 proton dan 12 neutron, elektron 2.8.1 pada tiga petala. Isotop ditunjuk dengan bilangan neutron berbeza.");
     await tunggu(350);
     await p.click('[data-f="aksi"]', { timeout: 4000 }).catch(() => {});
     await tunggu(jeda.lihat);
@@ -133,7 +133,7 @@ const PASANG = `(() => {
   await tunggu(3000);
 
   /* 5. hentian 2: garis masa */
-  await kap("Garis masa dan petikan sumber, seperti dalam peperiksaan.");
+  await kap("Jadual data dan rajah, seperti dalam peperiksaan.");
   await keHentian(2); await tunggu(500);
   for (let i = 0; i < 2; i++) { if (!(await jawabSatu({ baca: 1700, lihat: 1300 }))) break; }
   await kap(null); await tunggu(300);
@@ -162,7 +162,7 @@ const PASANG = `(() => {
 
   /* 7. kad penutup */
   await kap(null);
-  await kad(`<img src="${logo}" alt=""><h1>Bab 1 dan 2<em>percuma.</em></h1><p>Semua tingkatan, Tingkatan 1 hingga 5.</p><p><b>Menengah rendah (T1-T3) atau menengah atas (T4-T5): RM23 setahun</b>, harga perintis hingga 31 Dis 2026.</p><span class="pil">jejaktpkimia.naikgred.com</span>`);
+  await kad(`<img src="${logo}" alt=""><h1>Bab 1 dan 2<em>percuma.</em></h1><p>Tingkatan 4 dan 5.</p><p><b>Semua 13 bab Kimia: RM23 setahun</b>, harga <i>Early Bird</i> hingga 31 Dis 2026.</p><span class="pil">jejaktpkimia.naikgred.com</span>`);
   await tunggu(5800);
   const tTamat = Date.now() / 1000;
 
@@ -181,7 +181,7 @@ const PASANG = `(() => {
   fs.writeFileSync(path.join(FRAMES, "senarai.txt"), senarai.join("\n"));
   const jumlah = Math.max(tTamat, bingkai[bingkai.length - 1].t + 1.0) - bingkai[0].t;
   console.log(`bingkai: ${bingkai.length}, tempoh ~${jumlah.toFixed(1)}s`);
-  const keluarMp4 = path.join(KELUAR, "video-demo-sejarah.mp4");
+  const keluarMp4 = path.join(KELUAR, "video-demo-kimia.mp4");
   const args = ["-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", path.join(FRAMES, "senarai.txt")];
   if (MUZIK) args.push("-i", MUZIK);
   args.push("-vf", "fps=30,scale=720:1558:flags=lanczos,format=yuv420p", "-c:v", "libx264", "-crf", "23", "-preset", "medium", "-movflags", "+faststart");
@@ -189,7 +189,7 @@ const PASANG = `(() => {
   args.push("-t", jumlah.toFixed(2), keluarMp4);
   execFileSync("ffmpeg", args, { stdio: "inherit" });
   /* poster: bingkai peta murid (selepas kad pembuka) */
-  execFileSync("ffmpeg", ["-v", "error", "-y", "-ss", "9.5", "-i", keluarMp4, "-frames:v", "1", "-q:v", "3", path.join(KELUAR, "video-demo-poster-sejarah.jpg")], { stdio: "inherit" });
+  execFileSync("ffmpeg", ["-v", "error", "-y", "-ss", "9.5", "-i", keluarMp4, "-frames:v", "1", "-q:v", "3", path.join(KELUAR, "video-demo-poster-kimia.jpg")], { stdio: "inherit" });
   fs.rmSync(FRAMES, { recursive: true, force: true });
   console.log("siap:", keluarMp4);
 })().catch(e => { console.error(e); process.exit(1); });

@@ -306,7 +306,7 @@ function tulis(bab){
    DIJANA. Jangan sunting fail ini terus; sunting sumber/${bab.id}.js
    kemudian jalankan: node bina.js ${bab.id}
 
-   Standard Prestasi disalin kata demi kata daripada DSKP KSSM Kimia
+   Standard Prestasi diterjemah daripada deskriptor DSKP KSSM Kimia (versi Bahasa Inggeris)
    Tingkatan ${bab.tingkatan}, Bahagian Pembangunan Kurikulum.
 */
 window.BANK = window.BANK || {};

@@ -15,7 +15,7 @@
       var e = senarai[i];
       e.setAttribute("data-sr", "1"); e.setAttribute("aria-hidden", "true");
       var sr = document.createElement("span");
-      sr.className = "sr-sahaja"; sr.textContent = " kuasa " + sebut(e.textContent) + " ";
+      sr.className = "sr-sahaja"; sr.textContent = " superskrip " + sebut(e.textContent) + " ";
       if (e.parentNode) e.parentNode.insertBefore(sr, e);
     }
   }
