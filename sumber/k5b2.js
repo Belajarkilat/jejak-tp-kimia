@@ -10,7 +10,7 @@ const ARAS = [
  kadNama:"Hidrokarbon", kadEm:"\u{1F6E2}\u{FE0F}", kadFakta:"Hidrokarbon ialah sebatian yang mengandungi karbon dan hidrogen sahaja. Alkana tepu (ikatan tunggal); alkena tak tepu (ikatan ganda dua C=C).",
  bosKadNama:"Siri Homolog", bosKadEm:"\u{1F517}", bosKadFakta:"Ahli siri homolog mempunyai formula am dan kumpulan berfungsi yang sama, dan setiap ahli berbeza sebanyak CH₂.",
  soalan:[
- {j:"pilih",t:"Sebatian organik ialah sebatian karbon yang:",p:["Berasal daripada hidupan","Hanya terdapat dalam batuan","Tidak mengandungi unsur karbon","Sentiasa wujud dalam keadaan gas"],b:0,u:"Contoh: glukosa, protein dan minyak. CO₂ dan karbonat ialah sebatian karbon tak organik."},
+ {j:"pilih",t:"Sebatian organik ialah sebatian karbon yang:",p:["Berasal daripada hidupan","Terdapat dalam batuan dan mineral","Terbentuk daripada logam dan bukan logam","Wujud dalam keadaan gas pada suhu bilik"],b:0,u:"Contoh: glukosa, protein dan minyak. CO₂ dan karbonat ialah sebatian karbon tak organik."},
  {j:"pilih",t:"Formula am alkana ialah:",p:["CₙH₂ₙ₊₂","CₙH₂ₙ","CₙH₂ₙ₋₂","CₙH₂ₙ₊₁OH"],b:0,u:"Contoh: metana CH₄, etana C₂H₆."},
  {j:"pilih",t:"Kumpulan berfungsi bagi alkohol ialah:",p:["Hidroksil, –OH","Karboksil, –COOH","Ikatan ganda dua C=C","Karboksilat, –COO–"],b:0,u:"Contoh: etanol, C₂H₅OH."},
  {j:"pilih",t:"Kumpulan berfungsi bagi asid karboksilik ialah:",p:["Karboksil, –COOH","Hidroksil, –OH","Ikatan ganda dua C=C","Ikatan ganda tiga C≡C"],b:0,u:"Contoh: asid etanoik, CH₃COOH."},
@@ -32,7 +32,7 @@ const ARAS = [
  {j:"pilih",t:"Berdasarkan Jadual 1, mengapakah takat didih bertambah?",p:["Daya antara molekul bertambah","Ikatan kovalen dalam molekul lemah","Molekul menjadi bercas","Ikatan hidrogen hilang"],b:0,u:"Molekul lebih besar mempunyai daya Van der Waals lebih kuat."},
  {j:"pilih",t:"Mengapakah alkana tidak larut dalam air tetapi larut dalam pelarut organik?",p:["Alkana ialah molekul kovalen bukan kutub","Alkana ialah sebatian ion","Alkana mempunyai ikatan hidrogen yang kuat","Alkana bertindak balas dengan air"],b:0,u:"Bahan bukan kutub larut dalam pelarut bukan kutub."},
  {j:"nombor",t:"Berdasarkan Jadual 1, hitung jisim molekul relatif propana, C₃H₈. (JAR: C = 12, H = 1)",b:44,tol:0.01,u:"3(12) + 8(1) = 44."}],
- bos:{j:"pilih",t:"Berdasarkan Jadual 1, alkana manakah sesuai sebagai gas memasak dalam tong (dicecairkan di bawah tekanan)?",p:["Propana dan butana","Metana sahaja","Pentana sahaja","Heksana dan pentana"],b:0,u:"Propana dan butana ialah gas pada suhu bilik tetapi mudah dicecairkan di bawah tekanan (LPG)."}},
+ bos:{j:"pilih",t:"Berdasarkan Jadual 1, alkana manakah sesuai sebagai gas memasak dalam tong (dicecairkan di bawah tekanan)?",p:["Propana dan butana","Metana dan etana","Pentana dan heksana","Etana dan pentana"],b:0,u:"Propana dan butana ialah gas pada suhu bilik tetapi mudah dicecairkan di bawah tekanan (LPG). Metana dan etana sukar dicecairkan; pentana dan heksana sudah cecair."}},
 
 {n:3, tempat:"Makmal Tindak Balas Organik", sk:"10.3 Sifat kimia alkana, alkena, alkohol dan asid karboksilik", lampiran:null,
  kadNama:"Ujian Ketaktepuan", kadEm:"\u{1F7E4}", kadFakta:"Alkena menyahwarnakan air bromin (perang → tidak berwarna) dan larutan kalium manganat(VII) berasid (ungu → tidak berwarna). Alkana tidak.",
@@ -109,7 +109,7 @@ module.exports = {
    tiada:"{n} belum menunjukkan bukti penguasaan yang mencukupi bagi bab Sebatian Karbon. Cadangan: ulang hentian pertama dan bina jadual formula am serta kumpulan berfungsi setiap siri homolog."
   },
   lampiran:{
-   j1:jadual(1, "Takat didih empat ahli pertama alkana dan pentana",
+   j1:jadual(1, "Takat didih lima ahli pertama alkana",
      ["Alkana", "Formula molekul", "Takat didih (°C)"],
      [["Metana","CH_4","−162"],["Etana","C_2H_6","−89"],["Propana","C_3H_8","−42"],["Butana","C_4H_{10}","−1"],["Pentana","C_5H_{12}","36"]]),
    j2:jadual(2, "Dua sebatian dengan formula molekul C₄H₁₀",

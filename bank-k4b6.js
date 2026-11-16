@@ -491,9 +491,9 @@ window.BANK["k4b6"] =
      "t": "Hablur garam mempunyai bentuk geometri tetap kerana:",
      "p": [
       "Ion tersusun teratur",
-      "Air mengisi semua ruang hablur",
+      "Air mengisi ruang dalam hablur",
       "Garam ialah sebatian kovalen",
-      "Hablur sentiasa berwarna biru"
+      "Hablur garam bercas positif"
      ],
      "b": 0,
      "u": "Ion dalam kekisi tersusun dalam corak berulang yang tetap."

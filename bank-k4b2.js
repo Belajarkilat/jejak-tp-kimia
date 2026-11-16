@@ -343,10 +343,10 @@ window.BANK["k4b2"] =
      "j": "pilih",
      "t": "Berdasarkan Rajah 1, apakah keadaan naftalena pada minit ke-6?",
      "p": [
-      "Pepejal sahaja",
+      "Pepejal",
       "Pepejal dan cecair",
-      "Cecair sahaja",
-      "Gas sahaja"
+      "Cecair",
+      "Cecair dan gas"
      ],
      "b": 1,
      "u": "Semasa peleburan, pepejal dan cecair wujud bersama."
@@ -414,7 +414,7 @@ window.BANK["k4b2"] =
    ],
    "bos": {
     "j": "pilih",
-    "t": "Berdasarkan Rajah 1, apakah yang berlaku kepada susunan zarah selepas minit ke-10?",
+    "t": "Berdasarkan Rajah 1, apakah yang berlaku kepada zarah naftalena selepas minit ke-10?",
     "p": [
      "Zarah tersusun rapat dalam corak tetap",
      "Zarah bertukar menjadi atom baharu",

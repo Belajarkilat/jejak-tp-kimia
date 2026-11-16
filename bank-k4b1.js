@@ -770,9 +770,9 @@ window.BANK["k4b1"] =
      "t": "Sebelum melaksanakan projek kimia di sekolah, langkah PERTAMA yang wajar ialah:",
      "p": [
       "Menilai risiko dan mendapatkan kelulusan guru",
-      "Membeli semua bahan dan radas tanpa membuat senarai terlebih dahulu",
-      "Menjalankan projek tanpa memberitahu sesiapa",
-      "Memilih bahan yang paling berbahaya"
+      "Membeli bahan dan radas dahulu sebelum merancang",
+      "Menjalankan projek secara rahsia di rumah",
+      "Memilih bahan yang paling berbahaya dan menarik"
      ],
      "b": 0,
      "u": "Penilaian risiko dan kelulusan memastikan projek selamat dan terancang."

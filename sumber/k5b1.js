@@ -33,7 +33,7 @@ const ARAS = [
  {j:"pilih",t:"Berdasarkan Jadual 1, persamaan setengah bagi pengoksidaan zink ialah:",p:["Zn → Zn²⁺ + 2e⁻","Zn²⁺ + 2e⁻ → Zn","Zn + 2e⁻ → Zn²⁺","Zn²⁺ → Zn + 2e⁻"],b:0,u:"Pengoksidaan ialah kehilangan elektron."},
  {j:"pilih",t:"Berdasarkan Jadual 1, susun logam mengikut kekuatan agen penurunan secara MENURUN.",p:["Mg, Zn, Fe, Cu, Ag","Ag, Cu, Fe, Zn, Mg","Zn, Mg, Cu, Fe, Ag","Fe, Mg, Zn, Ag, Cu"],b:0,u:"E° dari paling negatif ke paling positif."},
  {j:"pilih",t:"Klorin menyesarkan bromin daripada larutan kalium bromida. Ini menunjukkan klorin ialah:",p:["Agen pengoksidaan lebih kuat","Agen penurunan lebih kuat","Kurang reaktif daripada bromin","Bukan halogen"],b:0,u:"Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂; klorin lebih mudah menerima elektron."}],
- bos:{j:"pilih",t:"Berdasarkan Jadual 1, pasangan manakah TIDAK akan bertindak balas?",p:["Kuprum dan larutan zink sulfat","Magnesium dan larutan kuprum(II) sulfat","Ferum dan larutan argentum nitrat","Zink dan larutan plumbum(II) nitrat"],b:0,u:"Kuprum (E° +0.34 V) tidak dapat menurunkan Zn²⁺ (−0.76 V)."}},
+ bos:{j:"pilih",t:"Berdasarkan Jadual 1, pasangan manakah TIDAK akan bertindak balas?",p:["Cu dan larutan ZnSO₄","Mg dan larutan CuSO₄","Fe dan larutan AgNO₃","Zn dan larutan Pb(NO₃)₂"],b:0,u:"Kuprum (E° +0.34 V) tidak dapat menurunkan Zn²⁺ (−0.76 V)."}},
 
 {n:3, tempat:"Bilik Sel Kimia", sk:"9.3 Sel kimia (sel volta)", lampiran:"r1",
  kadNama:"Sel Volta", kadEm:"\u{1F50B}", kadFakta:"Sel volta menukar tenaga kimia kepada tenaga elektrik. Elektron mengalir dari terminal negatif (anod) ke terminal positif (katod) melalui wayar.",

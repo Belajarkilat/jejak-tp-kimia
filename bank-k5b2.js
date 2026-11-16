@@ -39,7 +39,7 @@ window.BANK["k5b2"] =
   "tiada": "{n} belum menunjukkan bukti penguasaan yang mencukupi bagi bab Sebatian Karbon. Cadangan: ulang hentian pertama dan bina jadual formula am serta kumpulan berfungsi setiap siri homolog."
  },
  "lampiran": {
-  "j1": "<figure class=\"figure jadual-kimia\"><div class=\"tbl-wrap\"><table class=\"tbl\"><thead><tr><th>Alkana</th><th>Formula molekul</th><th>Takat didih (°C)</th></tr></thead><tbody><tr><td>Metana</td><td>CH<sub>4</sub></td><td>−162</td></tr><tr><td>Etana</td><td>C<sub>2</sub>H<sub>6</sub></td><td>−89</td></tr><tr><td>Propana</td><td>C<sub>3</sub>H<sub>8</sub></td><td>−42</td></tr><tr><td>Butana</td><td>C<sub>4</sub>H<sub>10</sub></td><td>−1</td></tr><tr><td>Pentana</td><td>C<sub>5</sub>H<sub>12</sub></td><td>36</td></tr></tbody></table></div><figcaption>Jadual 1 · Takat didih empat ahli pertama alkana dan pentana</figcaption></figure>",
+  "j1": "<figure class=\"figure jadual-kimia\"><div class=\"tbl-wrap\"><table class=\"tbl\"><thead><tr><th>Alkana</th><th>Formula molekul</th><th>Takat didih (°C)</th></tr></thead><tbody><tr><td>Metana</td><td>CH<sub>4</sub></td><td>−162</td></tr><tr><td>Etana</td><td>C<sub>2</sub>H<sub>6</sub></td><td>−89</td></tr><tr><td>Propana</td><td>C<sub>3</sub>H<sub>8</sub></td><td>−42</td></tr><tr><td>Butana</td><td>C<sub>4</sub>H<sub>10</sub></td><td>−1</td></tr><tr><td>Pentana</td><td>C<sub>5</sub>H<sub>12</sub></td><td>36</td></tr></tbody></table></div><figcaption>Jadual 1 · Takat didih lima ahli pertama alkana</figcaption></figure>",
   "j2": "<figure class=\"figure jadual-kimia\"><div class=\"tbl-wrap\"><table class=\"tbl\"><thead><tr><th>Sebatian</th><th>Formula struktur ringkas</th><th>Takat didih (°C)</th></tr></thead><tbody><tr><td>X</td><td>CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></td><td>−1</td></tr><tr><td>Y</td><td>CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>3</sub></td><td>−12</td></tr></tbody></table></div><figcaption>Jadual 2 · Dua sebatian dengan formula molekul C₄H₁₀</figcaption></figure>"
  },
  "aras": [
@@ -60,9 +60,9 @@ window.BANK["k5b2"] =
      "t": "Sebatian organik ialah sebatian karbon yang:",
      "p": [
       "Berasal daripada hidupan",
-      "Hanya terdapat dalam batuan",
-      "Tidak mengandungi unsur karbon",
-      "Sentiasa wujud dalam keadaan gas"
+      "Terdapat dalam batuan dan mineral",
+      "Terbentuk daripada logam dan bukan logam",
+      "Wujud dalam keadaan gas pada suhu bilik"
      ],
      "b": 0,
      "u": "Contoh: glukosa, protein dan minyak. CO₂ dan karbonat ialah sebatian karbon tak organik."
@@ -281,13 +281,13 @@ window.BANK["k5b2"] =
     "j": "pilih",
     "t": "Berdasarkan Jadual 1, alkana manakah sesuai sebagai gas memasak dalam tong (dicecairkan di bawah tekanan)?",
     "p": [
-     "Metana sahaja",
-     "Pentana sahaja",
+     "Metana dan etana",
+     "Pentana dan heksana",
      "Propana dan butana",
-     "Heksana dan pentana"
+     "Etana dan pentana"
     ],
     "b": 2,
-    "u": "Propana dan butana ialah gas pada suhu bilik tetapi mudah dicecairkan di bawah tekanan (LPG)."
+    "u": "Propana dan butana ialah gas pada suhu bilik tetapi mudah dicecairkan di bawah tekanan (LPG). Metana dan etana sukar dicecairkan; pentana dan heksana sudah cecair."
    }
   },
   {

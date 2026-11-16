@@ -331,7 +331,7 @@ window.BANK["k4b4"] =
     },
     {
      "j": "pilih",
-     "t": "Berdasarkan Jadual 1, halogen manakah paling reaktif?",
+     "t": "Berdasarkan Jadual 1, antara tiga halogen ini, yang manakah paling reaktif?",
      "p": [
       "Bromin",
       "Iodin",
@@ -480,9 +480,9 @@ window.BANK["k4b4"] =
      "t": "Berdasarkan Jadual 2, bagaimanakah sifat oksida berubah merentasi Kala 3?",
      "p": [
       "Berasid → amfoterik → bes",
-      "Bes sepanjang kala tanpa berubah",
+      "Amfoterik → bes → berasid",
       "Bes → amfoterik → berasid",
-      "Berasid sepanjang kala tanpa berubah"
+      "Berasid → bes → amfoterik"
      ],
      "b": 2,
      "u": "Na₂O dan MgO bes, Al₂O₃ amfoterik, SiO₂, P₄O₁₀, SO₂ dan Cl₂O₇ berasid."

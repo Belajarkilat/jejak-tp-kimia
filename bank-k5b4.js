@@ -189,9 +189,9 @@ window.BANK["k5b4"] =
      "j": "pilih",
      "t": "Monomer bagi pempolimeran penambahan mesti mempunyai:",
      "p": [
-      "Kumpulan karboksil sahaja",
-      "Ion logam dalam struktur",
-      "Ikatan tunggal sahaja",
+      "Kumpulan karboksil –COOH",
+      "Ion logam dalam strukturnya",
+      "Ikatan tunggal C–C",
       "Ikatan ganda dua C=C"
      ],
      "b": 3,
@@ -593,8 +593,8 @@ window.BANK["k5b4"] =
      "t": "Sarung tangan perubatan masih banyak diperbuat daripada lateks getah asli kerana:",
      "p": [
       "Nipis, kenyal dan sensitif sentuhan",
-      "Ia tahan semua jenis minyak dan pelarut",
-      "Ia tidak pernah menyebabkan alahan",
+      "Ia tahan minyak dan pelarut organik",
+      "Ia bebas daripada protein penyebab alahan",
       "Ia diperbuat daripada petroleum murah"
      ],
      "b": 0,

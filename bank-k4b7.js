@@ -397,7 +397,7 @@ window.BANK["k4b7"] =
     "t": "Pilih SEMUA padanan aplikasi dan faktor kadar yang betul.",
     "p": [
      "Peti sejuk: suhu",
-     "Serbuk penaik dalam kek: luas permukaan",
+     "Kayu api dibelah kecil: luas permukaan",
      "Enzim dalam detergen: mangkin",
      "Periuk tekanan: mangkin",
      "Kunyah makanan: tekanan"

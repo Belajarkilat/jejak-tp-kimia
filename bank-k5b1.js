@@ -284,10 +284,10 @@ window.BANK["k5b1"] =
     "j": "pilih",
     "t": "Berdasarkan Jadual 1, pasangan manakah TIDAK akan bertindak balas?",
     "p": [
-     "Kuprum dan larutan zink sulfat",
-     "Magnesium dan larutan kuprum(II) sulfat",
-     "Ferum dan larutan argentum nitrat",
-     "Zink dan larutan plumbum(II) nitrat"
+     "Cu dan larutan ZnSO₄",
+     "Mg dan larutan CuSO₄",
+     "Fe dan larutan AgNO₃",
+     "Zn dan larutan Pb(NO₃)₂"
     ],
     "b": 0,
     "u": "Kuprum (E° +0.34 V) tidak dapat menurunkan Zn²⁺ (−0.76 V)."

@@ -125,7 +125,7 @@ module.exports = {
      [["Metanol","CH_3OH","−726"],["Etanol","C_2H_5OH","−1376"],["Propan-1-ol","C_3H_7OH","−2016"],["Butan-1-ol","C_4H_9OH","−2676"]]),
    j3:jadual(3, "Nilai bahan api beberapa bahan api",
      ["Bahan api", "Nilai bahan api (kJ g⁻¹)"],
-     [["Hidrogen","143"],["Gas asli (metana)","55"],["Petrol","34"],["Arang","33"],["Etanol","30"]])
+     [["Hidrogen","143"],["Gas asli (metana)","55"],["Petrol","47"],["Arang","33"],["Etanol","30"]])
   },
   aras:ARAS
 };
