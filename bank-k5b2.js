@@ -1,0 +1,789 @@
+/* Bank soalan — Kimia Ting. 5 · Bab 2 Sebatian Karbon.
+   DIJANA. Jangan sunting fail ini terus; sunting sumber/k5b2.js
+   kemudian jalankan: node bina.js k5b2
+
+   Standard Prestasi disalin kata demi kata daripada DSKP KSSM Kimia
+   Tingkatan 5, Bahagian Pembangunan Kurikulum.
+*/
+window.BANK = window.BANK || {};
+window.BANK["k5b2"] =
+{
+ "id": "k5b2",
+ "tingkatan": 5,
+ "kod": "2.0 Sebatian Karbon",
+ "tajuk": "Rantai Karbon",
+ "subtajuk": "Kimia Ting. 5 · Bab 2 Sebatian Karbon",
+ "spi": [
+  "Mengingat kembali pengetahuan dan kemahiran asas mengenai sebatian karbon.",
+  "Memahami sebatian karbon serta dapat menjelaskan kefahaman tersebut.",
+  "Mengaplikasikan pengetahuan mengenai sebatian karbon untuk menerangkan kejadian atau fenomena alam dan dapat melaksanakan tugasan mudah.",
+  "Menganalisis pengetahuan mengenai sebatian karbon dalam konteks penyelesaian masalah mengenai kejadian atau fenomena alam.",
+  "Menilai pengetahuan mengenai sebatian karbon dalam konteks penyelesaian masalah dan membuat keputusan untuk melaksanakan sesuatu tugasan.",
+  "Mereka cipta menggunakan pengetahuan mengenai sebatian karbon dalam konteks penyelesaian masalah dan membuat keputusan atau dalam melaksanakan aktiviti/tugasan dalam situasi baharu secara kreatif dan inovatif dengan mengambil kira nilai sosial/ekonomi/budaya masyarakat."
+ ],
+ "kko": [
+  "Mengingat",
+  "Memahami",
+  "Mengaplikasi",
+  "Menganalisis",
+  "Menilai",
+  "Mereka cipta"
+ ],
+ "ulasan": {
+  "1": "{n} dapat mengingat kembali jenis sebatian karbon, formula am dan kumpulan berfungsi siri homolog. Langkah seterusnya ialah menjelaskan sifat fizik siri homolog.",
+  "2": "{n} dapat menjelaskan corak sifat fizik dalam siri homolog. Perlu lebih latihan mengaplikasikan sifat kimia alkana, alkena, alkohol dan asid karboksilik.",
+  "3": "{n} boleh mengaplikasikan sifat kimia dan saling pertukaran antara siri homolog. Galakkan menganalisis isomer dan penamaan IUPAC.",
+  "4": "{n} mampu menganalisis isomer dan menamakan sebatian mengikut IUPAC. Seterusnya latih menilai kegunaan sebatian karbon.",
+  "5": "{n} dapat menilai kegunaan bahan api dan sebatian karbon dari segi keselamatan, ekonomi dan alam sekitar. Sudah bersedia mereka cipta produk.",
+  "6": "{n} berjaya mereka cipta produk berasaskan sebatian karbon secara kreatif dan bertanggungjawab. Pencapaian cemerlang bagi bab ini.",
+  "tiada": "{n} belum menunjukkan bukti penguasaan yang mencukupi bagi bab Sebatian Karbon. Cadangan: ulang hentian pertama dan bina jadual formula am serta kumpulan berfungsi setiap siri homolog."
+ },
+ "lampiran": {
+  "j1": "<figure class=\"figure jadual-kimia\"><div class=\"tbl-wrap\"><table class=\"tbl\"><thead><tr><th>Alkana</th><th>Formula molekul</th><th>Takat didih (°C)</th></tr></thead><tbody><tr><td>Metana</td><td>CH<sub>4</sub></td><td>−162</td></tr><tr><td>Etana</td><td>C<sub>2</sub>H<sub>6</sub></td><td>−89</td></tr><tr><td>Propana</td><td>C<sub>3</sub>H<sub>8</sub></td><td>−42</td></tr><tr><td>Butana</td><td>C<sub>4</sub>H<sub>10</sub></td><td>−1</td></tr><tr><td>Pentana</td><td>C<sub>5</sub>H<sub>12</sub></td><td>36</td></tr></tbody></table></div><figcaption>Jadual 1 · Takat didih empat ahli pertama alkana dan pentana</figcaption></figure>",
+  "j2": "<figure class=\"figure jadual-kimia\"><div class=\"tbl-wrap\"><table class=\"tbl\"><thead><tr><th>Sebatian</th><th>Formula struktur ringkas</th><th>Takat didih (°C)</th></tr></thead><tbody><tr><td>X</td><td>CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></td><td>−1</td></tr><tr><td>Y</td><td>CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>3</sub></td><td>−12</td></tr></tbody></table></div><figcaption>Jadual 2 · Dua sebatian dengan formula molekul C₄H₁₀</figcaption></figure>"
+ },
+ "aras": [
+  {
+   "n": 1,
+   "tempat": "Telaga Minyak",
+   "sk": "10.1 Jenis sebatian karbon · 10.2 Siri homolog",
+   "lampiran": null,
+   "kadNama": "Hidrokarbon",
+   "kadEm": "🛢️",
+   "kadFakta": "Hidrokarbon ialah sebatian yang mengandungi karbon dan hidrogen sahaja. Alkana tepu (ikatan tunggal); alkena tak tepu (ikatan ganda dua C=C).",
+   "bosKadNama": "Siri Homolog",
+   "bosKadEm": "🔗",
+   "bosKadFakta": "Ahli siri homolog mempunyai formula am dan kumpulan berfungsi yang sama, dan setiap ahli berbeza sebanyak CH₂.",
+   "soalan": [
+    {
+     "j": "pilih",
+     "t": "Sebatian organik ialah sebatian karbon yang:",
+     "p": [
+      "Berasal daripada hidupan",
+      "Hanya terdapat dalam batuan",
+      "Tidak mengandungi unsur karbon",
+      "Sentiasa wujud dalam keadaan gas"
+     ],
+     "b": 0,
+     "u": "Contoh: glukosa, protein dan minyak. CO₂ dan karbonat ialah sebatian karbon tak organik."
+    },
+    {
+     "j": "pilih",
+     "t": "Formula am alkana ialah:",
+     "p": [
+      "CₙH₂ₙ",
+      "CₙH₂ₙ₊₂",
+      "CₙH₂ₙ₋₂",
+      "CₙH₂ₙ₊₁OH"
+     ],
+     "b": 1,
+     "u": "Contoh: metana CH₄, etana C₂H₆."
+    },
+    {
+     "j": "pilih",
+     "t": "Kumpulan berfungsi bagi alkohol ialah:",
+     "p": [
+      "Karboksil, –COOH",
+      "Ikatan ganda dua C=C",
+      "Hidroksil, –OH",
+      "Karboksilat, –COO–"
+     ],
+     "b": 2,
+     "u": "Contoh: etanol, C₂H₅OH."
+    },
+    {
+     "j": "pilih",
+     "t": "Kumpulan berfungsi bagi asid karboksilik ialah:",
+     "p": [
+      "Hidroksil, –OH",
+      "Ikatan ganda dua C=C",
+      "Ikatan ganda tiga C≡C",
+      "Karboksil, –COOH"
+     ],
+     "b": 3,
+     "u": "Contoh: asid etanoik, CH₃COOH."
+    },
+    {
+     "j": "pilih",
+     "t": "Nama ahli alkena yang mempunyai tiga atom karbon ialah:",
+     "p": [
+      "Propena",
+      "Propana",
+      "Propanol",
+      "Etena"
+     ],
+     "b": 0,
+     "u": "Propena, C₃H₆."
+    },
+    {
+     "j": "pilih",
+     "t": "Petroleum dipisahkan kepada pecahan melalui:",
+     "p": [
+      "Penapisan dengan kertas turas",
+      "Penyulingan berperingkat",
+      "Penghabluran pada suhu bilik",
+      "Elektrolisis larutan akueus"
+     ],
+     "b": 1,
+     "u": "Pecahan dipisahkan mengikut julat takat didih."
+    },
+    {
+     "j": "pilih",
+     "t": "Ester mempunyai bau:",
+     "p": [
+      "Busuk seperti telur",
+      "Tajam seperti ammonia",
+      "Wangi seperti buah",
+      "Tiada bau langsung"
+     ],
+     "b": 2,
+     "u": "Ester digunakan sebagai perisa dan pewangi."
+    },
+    {
+     "j": "banyak",
+     "t": "Pilih DUA hidrokarbon tak tepu.",
+     "p": [
+      "Etena",
+      "Propuna",
+      "Etana",
+      "Butana"
+     ],
+     "b": [
+      0,
+      1
+     ],
+     "u": "Alkena (C=C) dan alkuna (C≡C) tak tepu; alkana tepu."
+    }
+   ],
+   "bos": {
+    "j": "banyak",
+    "t": "Pilih SEMUA padanan siri homolog dan contohnya yang betul.",
+    "p": [
+     "Alkana: butana",
+     "Alkohol: propan-1-ol",
+     "Ester: etil etanoat",
+     "Asid karboksilik: etanol",
+     "Alkena: metana"
+    ],
+    "b": [
+     0,
+     1,
+     2
+    ],
+    "u": "Etanol ialah alkohol; metana ialah alkana."
+   }
+  },
+  {
+   "n": 2,
+   "tempat": "Bilik Siri Homolog",
+   "sk": "10.2 Sifat fizik siri homolog",
+   "lampiran": "j1",
+   "kadNama": "Takat Didih",
+   "kadEm": "🌡️",
+   "kadFakta": "Takat didih ahli siri homolog bertambah apabila bilangan atom karbon bertambah kerana saiz molekul dan daya Van der Waals bertambah.",
+   "bosKadNama": "Keadaan Fizik",
+   "bosKadEm": "🧊",
+   "bosKadFakta": "Alkana dengan 1 hingga 4 atom karbon ialah gas pada suhu bilik; 5 hingga 17 atom karbon ialah cecair.",
+   "soalan": [
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 1, apakah corak takat didih alkana?",
+     "p": [
+      "Berkurang dengan bilangan karbon",
+      "Tidak berubah",
+      "Turun kemudian naik",
+      "Bertambah dengan bilangan karbon"
+     ],
+     "b": 3,
+     "u": "Takat didih naik dari −162 °C (metana) ke 36 °C (pentana)."
+    },
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 1, apakah keadaan fizik pentana pada suhu bilik (25 °C)?",
+     "p": [
+      "Cecair",
+      "Gas",
+      "Pepejal",
+      "Plasma"
+     ],
+     "b": 0,
+     "u": "Takat didih pentana 36 °C, lebih tinggi daripada suhu bilik."
+    },
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 1, apakah formula molekul butana?",
+     "p": [
+      "C₄H₈",
+      "C₄H₁₀",
+      "C₄H₆",
+      "C₄H₁₂"
+     ],
+     "b": 1,
+     "u": "CₙH₂ₙ₊₂ dengan n = 4."
+    },
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 1, berapakah perbezaan JMR antara dua ahli berturutan?",
+     "p": [
+      "12",
+      "16",
+      "14",
+      "2"
+     ],
+     "b": 2,
+     "u": "Setiap ahli berbeza sebanyak CH₂ = 12 + 2 = 14."
+    },
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 1, ramalkan takat didih heksana, C₆H₁₄.",
+     "p": [
+      "Kira-kira −100 °C",
+      "Kira-kira 0 °C",
+      "Kira-kira 36 °C",
+      "Kira-kira 69 °C"
+     ],
+     "b": 3,
+     "u": "Corak menunjukkan takat didih terus naik; heksana mendidih pada 69 °C."
+    },
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 1, mengapakah takat didih bertambah?",
+     "p": [
+      "Daya antara molekul bertambah",
+      "Ikatan kovalen dalam molekul lemah",
+      "Molekul menjadi bercas",
+      "Ikatan hidrogen hilang"
+     ],
+     "b": 0,
+     "u": "Molekul lebih besar mempunyai daya Van der Waals lebih kuat."
+    },
+    {
+     "j": "pilih",
+     "t": "Mengapakah alkana tidak larut dalam air tetapi larut dalam pelarut organik?",
+     "p": [
+      "Alkana ialah sebatian ion",
+      "Alkana ialah molekul kovalen bukan kutub",
+      "Alkana mempunyai ikatan hidrogen yang kuat",
+      "Alkana bertindak balas dengan air"
+     ],
+     "b": 1,
+     "u": "Bahan bukan kutub larut dalam pelarut bukan kutub."
+    },
+    {
+     "j": "nombor",
+     "t": "Berdasarkan Jadual 1, hitung jisim molekul relatif propana, C₃H₈. (JAR: C = 12, H = 1)",
+     "b": 44,
+     "tol": 0.001000000001,
+     "u": "3(12) + 8(1) = 44."
+    }
+   ],
+   "bos": {
+    "j": "pilih",
+    "t": "Berdasarkan Jadual 1, alkana manakah sesuai sebagai gas memasak dalam tong (dicecairkan di bawah tekanan)?",
+    "p": [
+     "Metana sahaja",
+     "Pentana sahaja",
+     "Propana dan butana",
+     "Heksana dan pentana"
+    ],
+    "b": 2,
+    "u": "Propana dan butana ialah gas pada suhu bilik tetapi mudah dicecairkan di bawah tekanan (LPG)."
+   }
+  },
+  {
+   "n": 3,
+   "tempat": "Makmal Tindak Balas Organik",
+   "sk": "10.3 Sifat kimia alkana, alkena, alkohol dan asid karboksilik",
+   "lampiran": null,
+   "kadNama": "Ujian Ketaktepuan",
+   "kadEm": "🟤",
+   "kadFakta": "Alkena menyahwarnakan air bromin (perang → tidak berwarna) dan larutan kalium manganat(VII) berasid (ungu → tidak berwarna). Alkana tidak.",
+   "bosKadNama": "Pengesteran",
+   "bosKadEm": "🍌",
+   "bosKadFakta": "Asid karboksilik + alkohol → ester + air, dengan asid sulfurik pekat sebagai mangkin.",
+   "soalan": [
+    {
+     "j": "pilih",
+     "t": "Bagaimanakah anda membezakan heksana dan heksena?",
+     "p": [
+      "Tambah air suling ke dalamnya",
+      "Ukur jisim kedua-dua cecair",
+      "Bandingkan warna kedua-duanya",
+      "Tambah air bromin"
+     ],
+     "b": 3,
+     "u": "Heksena menyahwarnakan air bromin; heksana tidak (dalam gelap)."
+    },
+    {
+     "j": "pilih",
+     "t": "Etena bertindak balas dengan hidrogen dengan mangkin nikel pada 180 °C. Hasilnya ialah:",
+     "p": [
+      "Etana",
+      "Etanol",
+      "Etuna",
+      "Asid etanoik"
+     ],
+     "b": 0,
+     "u": "Penghidrogenan: C₂H₄ + H₂ → C₂H₆."
+    },
+    {
+     "j": "pilih",
+     "t": "Etena bertindak balas dengan stim (asid fosforik, 300 °C, 60 atm). Hasilnya ialah:",
+     "p": [
+      "Etana",
+      "Etanol",
+      "Etil etanoat",
+      "Asid etanoik"
+     ],
+     "b": 1,
+     "u": "Penghidratan: C₂H₄ + H₂O → C₂H₅OH."
+    },
+    {
+     "j": "pilih",
+     "t": "Etanol dipanaskan dengan larutan kalium dikromat(VI) berasid. Perubahan warna yang diperhatikan ialah:",
+     "p": [
+      "Hijau kepada jingga",
+      "Ungu kepada tidak berwarna",
+      "Jingga kepada hijau",
+      "Biru kepada merah"
+     ],
+     "b": 2,
+     "u": "Etanol dioksidakan kepada asid etanoik; Cr₂O₇²⁻ (jingga) diturunkan kepada Cr³⁺ (hijau)."
+    },
+    {
+     "j": "pilih",
+     "t": "Wap etanol dialirkan melalui serpihan porselin panas. Gas yang terhasil ialah:",
+     "p": [
+      "Etana",
+      "Oksigen",
+      "Hidrogen",
+      "Etena"
+     ],
+     "b": 3,
+     "u": "Pendehidratan: C₂H₅OH → C₂H₄ + H₂O."
+    },
+    {
+     "j": "pilih",
+     "t": "Asid etanoik bertindak balas dengan etanol (H₂SO₄ pekat). Hasil yang berbau buah ialah:",
+     "p": [
+      "Etil etanoat",
+      "Etanol",
+      "Etena",
+      "Etil metanoat"
+     ],
+     "b": 0,
+     "u": "CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O."
+    },
+    {
+     "j": "pilih",
+     "t": "Etanol dihasilkan daripada glukosa melalui:",
+     "p": [
+      "Peretakan",
+      "Penapaian oleh yis",
+      "Penghidrogenan",
+      "Pengesteran"
+     ],
+     "b": 1,
+     "u": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂, dengan enzim zimase dalam yis."
+    },
+    {
+     "j": "pilih",
+     "t": "Mengapakah heksena terbakar dengan nyalaan yang lebih berjelaga berbanding heksana?",
+     "p": [
+      "Heksena mempunyai lebih banyak hidrogen",
+      "Heksena tidak mengandungi karbon",
+      "Peratus karbon mengikut jisim lebih tinggi",
+      "Heksena ialah sebatian ion"
+     ],
+     "b": 2,
+     "u": "Heksena C₆H₁₂ 85.7% C; heksana C₆H₁₄ 83.7% C. Lebih banyak karbon tidak terbakar lengkap."
+    }
+   ],
+   "bos": {
+    "j": "susun",
+    "t": "Susun saling pertukaran berikut untuk menghasilkan etil etanoat daripada glukosa.",
+    "p": [
+     "Glukosa ditapai menjadi etanol",
+     "Sebahagian etanol dioksidakan menjadi asid etanoik",
+     "Asid etanoik dicampur dengan etanol",
+     "Ditambah asid sulfurik pekat dan dipanaskan",
+     "Etil etanoat terhasil"
+    ],
+    "b": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "u": "Penapaian → pengoksidaan → pengesteran."
+   }
+  },
+  {
+   "n": 4,
+   "tempat": "Bilik Isomer",
+   "sk": "10.4 Isomer dan penamaan IUPAC",
+   "lampiran": "j2",
+   "kadNama": "Isomer",
+   "kadEm": "🪞",
+   "kadFakta": "Isomer ialah molekul dengan formula molekul yang sama tetapi formula struktur yang berbeza.",
+   "bosKadNama": "Nama IUPAC",
+   "bosKadEm": "🏷️",
+   "bosKadFakta": "Nama IUPAC = cabang (dengan nombor kedudukan) + rantai karbon terpanjang + akhiran kumpulan berfungsi.",
+   "soalan": [
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 2, X dan Y ialah isomer kerana:",
+     "p": [
+      "Formula molekul berbeza, struktur sama",
+      "Takat didih kedua-duanya sama",
+      "Kedua-duanya ialah alkena",
+      "Formula molekul sama, struktur berbeza"
+     ],
+     "b": 3,
+     "u": "Kedua-duanya C₄H₁₀ tetapi susunan atom berbeza."
+    },
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 2, apakah nama IUPAC bagi Y?",
+     "p": [
+      "2-metilpropana",
+      "Butana",
+      "1-metilpropana",
+      "Metilbutana"
+     ],
+     "b": 0,
+     "u": "Rantai terpanjang 3 karbon (propana) dengan cabang metil pada karbon ke-2."
+    },
+    {
+     "j": "pilih",
+     "t": "Berdasarkan Jadual 2, mengapakah takat didih Y lebih rendah daripada X?",
+     "p": [
+      "Y mempunyai lebih banyak atom karbon",
+      "Y bercabang, luas permukaan sentuhan kecil",
+      "Y ialah sebatian ion yang lemah",
+      "Y mempunyai ikatan ganda dua"
+     ],
+     "b": 1,
+     "u": "Molekul bercabang lebih padat, jadi daya Van der Waals lebih lemah."
+    },
+    {
+     "j": "pilih",
+     "t": "Berapakah bilangan isomer bagi butena, C₄H₈ (tidak termasuk isomer geometri dan siklik)?",
+     "p": [
+      "1",
+      "2",
+      "3",
+      "5"
+     ],
+     "b": 2,
+     "u": "But-1-ena, but-2-ena dan 2-metilpropena."
+    },
+    {
+     "j": "pilih",
+     "t": "Nama IUPAC bagi CH₃CH₂CH₂OH ialah:",
+     "p": [
+      "Propan-2-ol",
+      "Propanol-3",
+      "Propena",
+      "Propan-1-ol"
+     ],
+     "b": 3,
+     "u": "Kumpulan –OH pada karbon pertama rantai tiga karbon."
+    },
+    {
+     "j": "pilih",
+     "t": "Nama IUPAC bagi CH₃COOCH₃ ialah:",
+     "p": [
+      "Metil etanoat",
+      "Etil metanoat",
+      "Asid etanoik",
+      "Metil propanoat"
+     ],
+     "b": 0,
+     "u": "Bahagian daripada alkohol (metil) disebut dahulu, diikuti bahagian daripada asid (etanoat)."
+    },
+    {
+     "j": "pilih",
+     "t": "Nama IUPAC bagi CH₂=CHCH₂CH₃ ialah:",
+     "p": [
+      "But-2-ena",
+      "But-1-ena",
+      "Butana",
+      "Prop-1-ena"
+     ],
+     "b": 1,
+     "u": "Ikatan ganda dua bermula pada karbon pertama rantai empat karbon."
+    },
+    {
+     "j": "pilih",
+     "t": "Pentana mempunyai berapa isomer?",
+     "p": [
+      "2",
+      "4",
+      "3",
+      "5"
+     ],
+     "b": 2,
+     "u": "Pentana, 2-metilbutana dan 2,2-dimetilpropana."
+    }
+   ],
+   "bos": {
+    "j": "pilih",
+    "t": "Berdasarkan Jadual 2, mengapakah X dan Y mempunyai sifat kimia yang serupa?",
+    "p": [
+     "Kedua-duanya mempunyai takat didih sama",
+     "Kedua-duanya mempunyai kumpulan –OH",
+     "Kedua-duanya bertindak balas dengan air bromin",
+     "Kedua-duanya alkana dengan ikatan tunggal"
+    ],
+    "b": 3,
+    "u": "Sifat kimia ditentukan oleh kumpulan berfungsi; kedua-duanya alkana tepu."
+   }
+  },
+  {
+   "n": 5,
+   "tempat": "Pejabat Penilai Bahan Api",
+   "sk": "10.1 hingga 10.3 Menilai kegunaan sebatian karbon",
+   "lampiran": null,
+   "kadNama": "Biodiesel",
+   "kadEm": "🌾",
+   "kadFakta": "Biodiesel ialah ester yang dihasilkan daripada minyak sawit atau minyak masak terpakai, dan boleh menggantikan sebahagian diesel petroleum.",
+   "bosKadNama": "Pembakaran Lengkap",
+   "bosKadEm": "🔥",
+   "bosKadFakta": "Pembakaran lengkap menghasilkan CO₂ dan air. Pembakaran tak lengkap menghasilkan karbon monoksida beracun dan jelaga.",
+   "soalan": [
+    {
+     "j": "pilih",
+     "t": "Kerajaan mahu menggalakkan biodiesel sawit. Hujah PALING kukuh menyokongnya ialah:",
+     "p": [
+      "Sumber boleh diperbaharui dan dihasilkan tempatan",
+      "Biodiesel tidak membebaskan sebarang gas",
+      "Biodiesel lebih murah dalam semua keadaan",
+      "Biodiesel tidak perlu diproses langsung"
+     ],
+     "b": 0,
+     "u": "Kelapa sawit boleh ditanam semula dan menyokong ekonomi tempatan."
+    },
+    {
+     "j": "pilih",
+     "t": "Mengapakah dapur gas perlu diselenggara supaya nyalaan berwarna biru, bukan kuning?",
+     "p": [
+      "Nyalaan biru lebih sejuk dan menjimatkan gas",
+      "Nyalaan kuning menandakan pembakaran tak lengkap dan CO",
+      "Nyalaan kuning lebih panas dan cepat masak",
+      "Warna nyalaan tidak penting"
+     ],
+     "b": 1,
+     "u": "Pembakaran tak lengkap menghasilkan karbon monoksida beracun."
+    },
+    {
+     "j": "pilih",
+     "t": "Seorang rakan mahu meminum etanol makmal kerana \"sama seperti minuman beralkohol\". Respons PALING tepat ialah:",
+     "p": [
+      "Selamat kerana etanol ialah makanan",
+      "Selamat jika dicampur air",
+      "Bahaya; etanol makmal mungkin dicampur bahan toksik",
+      "Bahaya kerana etanol ialah alkana"
+     ],
+     "b": 2,
+     "u": "Etanol makmal sering dicampur metanol (beracun) dan pengambilan alkohol membahayakan kesihatan."
+    },
+    {
+     "j": "pilih",
+     "t": "Etanol dicampur dengan petrol sebagai gasohol. Penilaian terbaik ialah:",
+     "p": [
+      "Tiada kelemahan langsung kerana etanol daripada tumbuhan",
+      "Etanol tidak boleh terbakar dalam enjin kenderaan",
+      "Etanol meningkatkan jelaga berbanding petrol biasa",
+      "Jimat petrol, tetapi tanaman bersaing dengan makanan"
+     ],
+     "b": 3,
+     "u": "Etanol boleh diperbaharui, tetapi tanah pertanian untuk bahan api boleh menjejaskan bekalan makanan."
+    },
+    {
+     "j": "pilih",
+     "t": "Pengusaha minyak masak terpakai mahu menjualnya kepada kilang biodiesel. Nilaikan.",
+     "p": [
+      "Wajar; sisa jadi bahan api dan kurang pencemaran",
+      "Tidak wajar kerana minyak terpakai tiada nilai",
+      "Lebih baik dibuang ke dalam longkang",
+      "Tidak wajar kerana biodiesel ialah alkana"
+     ],
+     "b": 0,
+     "u": "Minyak terpakai yang dibuang mencemarkan air; menjadikannya biodiesel bernilai ekonomi."
+    },
+    {
+     "j": "pilih",
+     "t": "Bahan manakah PALING sesuai untuk menghilangkan kesan cat minyak pada berus?",
+     "p": [
+      "Air paip sejuk",
+      "Pelarut organik seperti turpentin",
+      "Larutan garam",
+      "Jus limau"
+     ],
+     "b": 1,
+     "u": "Cat minyak larut dalam pelarut organik."
+    },
+    {
+     "j": "banyak",
+     "t": "Pilih DUA langkah wajar semasa menggunakan generator petrol di rumah.",
+     "p": [
+      "Letak di luar rumah berudara",
+      "Pasang pengesan karbon monoksida",
+      "Guna di dalam bilik tidur",
+      "Tutup semua tingkap rapat"
+     ],
+     "b": [
+      0,
+      1
+     ],
+     "u": "Gas ekzos mengandungi CO yang tidak berbau dan beracun."
+    },
+    {
+     "j": "pilih",
+     "t": "Antara bahan api berikut, yang manakah membebaskan paling sedikit jelaga per mol apabila dibakar?",
+     "p": [
+      "Heksena",
+      "Oktana",
+      "Metana",
+      "Heksana"
+     ],
+     "b": 2,
+     "u": "Metana mempunyai peratus karbon paling rendah dan mudah terbakar lengkap."
+    }
+   ],
+   "bos": {
+    "j": "pilih",
+    "t": "Sebuah kilang mahu menghasilkan etanol. Kaedah penapaian atau penghidratan etena? Penilaian PALING seimbang ialah:",
+    "p": [
+     "Penapaian sentiasa lebih baik dalam semua aspek termasuk kelajuan",
+     "Penghidratan etena menggunakan yis dan gula sebagai bahan mentah",
+     "Kedua-dua kaedah sama sepenuhnya dari segi kos dan kelajuan",
+     "Penapaian lestari; penghidratan lebih cepat dan hasil lebih tulen"
+    ],
+    "b": 3,
+    "u": "Penapaian lestari tetapi perlahan dan perlu penyulingan; penghidratan cepat tetapi bergantung pada petroleum."
+   }
+  },
+  {
+   "n": 6,
+   "tempat": "Studio Organik",
+   "sk": "10.1 hingga 10.4 Mereka cipta menggunakan sebatian karbon",
+   "lampiran": null,
+   "kadNama": "Perisa Ester",
+   "kadEm": "🍓",
+   "kadFakta": "Ester berbeza menghasilkan bau berbeza: contohnya pentil etanoat berbau pisang dan oktil etanoat berbau oren.",
+   "bosKadNama": "Produk Hijau",
+   "bosKadEm": "💡",
+   "bosKadFakta": "Produk berasaskan sebatian karbon yang baik menggunakan sumber boleh diperbaharui dan selamat kepada pengguna.",
+   "soalan": [
+    {
+     "j": "pilih",
+     "t": "Anda mahu menghasilkan perisa pisang untuk kek. Bahan yang perlu ditindakbalaskan ialah:",
+     "p": [
+      "Pentanol dan asid etanoik",
+      "Etena dan air bromin",
+      "Metana dan klorin",
+      "Glukosa dan air"
+     ],
+     "b": 0,
+     "u": "Pengesteran pentanol dan asid etanoik menghasilkan pentil etanoat (bau pisang)."
+    },
+    {
+     "j": "pilih",
+     "t": "Idea manakah PALING kreatif untuk menunjukkan isomer kepada murid?",
+     "p": [
+      "Baca definisi isomer dengan kuat di hadapan kelas",
+      "Bina model butana dan 2-metilpropana",
+      "Lukis satu molekul butana sahaja di papan putih",
+      "Menghafal nama IUPAC tanpa melihat strukturnya"
+     ],
+     "b": 1,
+     "u": "Model fizikal menunjukkan formula molekul sama tetapi struktur berbeza."
+    },
+    {
+     "j": "pilih",
+     "t": "Anda mereka pembersih tangan. Mengapakah etanol 70% dipilih?",
+     "p": [
+      "Etanol ialah bahan bukan organik",
+      "Etanol tidak boleh terbakar",
+      "Membunuh kuman dan cepat meruap",
+      "Etanol tidak larut dalam air"
+     ],
+     "b": 2,
+     "u": "Etanol 70% mendenaturasikan protein kuman dan meruap tanpa meninggalkan sisa."
+    },
+    {
+     "j": "pilih",
+     "t": "Komuniti kampung banyak menghasilkan sisa buah. Cadangan berasaskan kimia PALING berguna ialah:",
+     "p": [
+      "Bakar sisa buah secara terbuka di tepi kampung",
+      "Buang sisa buah ke dalam sungai berdekatan",
+      "Simpan sisa buah dalam stor sehingga reput",
+      "Tapai sisa buah menjadi bioetanol"
+     ],
+     "b": 3,
+     "u": "Penapaian menukar gula dalam buah kepada etanol."
+    },
+    {
+     "j": "banyak",
+     "t": "Pilih DUA langkah keselamatan semasa penyediaan ester di makmal sekolah.",
+     "p": [
+      "Panaskan dalam kukus air",
+      "Guna asid sulfurik pekat dengan cermat",
+      "Panaskan campuran dengan nyalaan Bunsen terus",
+      "Hidu wap ester terus dari mulut tabung"
+     ],
+     "b": [
+      0,
+      1
+     ],
+     "u": "Alkohol dan ester mudah terbakar; asid pekat mengakis."
+    },
+    {
+     "j": "pilih",
+     "t": "Bagaimanakah anda menguji sama ada sampel minyak mengandungi lemak tak tepu?",
+     "p": [
+      "Uji dengan air bromin",
+      "Timbang sampel minyak dengan neraca elektronik",
+      "Hidu bau sampel minyak dengan berhati-hati",
+      "Bandingkan warna minyak dengan minyak lain"
+     ],
+     "b": 0,
+     "u": "Ikatan C=C menyahwarnakan air bromin."
+    },
+    {
+     "j": "pilih",
+     "t": "Anda mereka kempen keselamatan gas memasak. Mesej PALING penting ialah:",
+     "p": [
+      "Simpan tong gas di bawah matahari",
+      "Periksa kebocoran dan pastikan nyalaan biru",
+      "Guna api untuk mencari kebocoran",
+      "Tutup tingkap semasa memasak"
+     ],
+     "b": 1,
+     "u": "Kebocoran gas dan pembakaran tak lengkap adalah bahaya utama."
+    },
+    {
+     "j": "pilih",
+     "t": "Pengusaha sabun kecil mahu menggunakan minyak sawit. Mengapakah pilihan ini sesuai di Malaysia?",
+     "p": [
+      "Minyak sawit ialah alkana tepu",
+      "Minyak sawit tidak boleh diproses",
+      "Minyak sawit mudah didapati dan murah",
+      "Minyak sawit diimport dari luar"
+     ],
+     "b": 2,
+     "u": "Sumber tempatan mengurangkan kos dan menyokong industri tempatan."
+    }
+   ],
+   "bos": {
+    "j": "buka",
+    "t": "Reka satu produk berasaskan sebatian karbon (contoh: pewangi ester, pembersih berasaskan etanol, bioetanol daripada sisa) untuk perusahaan kecil.",
+    "arahan": "Nyatakan bahan mentah, siri homolog yang terlibat, persamaan kimia utama (contoh: penapaian atau pengesteran), nama IUPAC hasil, langkah keselamatan, dan pertimbangan kos serta alam sekitar.",
+    "u": "Jawapan TP6 yang kukuh memilih tindak balas yang betul (contoh: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂), menamakan hasil mengikut IUPAC, menyatakan syarat tindak balas, mengambil kira keselamatan bahan mudah terbakar dan menilai kelestarian."
+   }
+  }
+ ]
+};

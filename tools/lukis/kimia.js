@@ -132,11 +132,43 @@ function sel(spec){
   throw new Error(`jenis sel "${j}" tidak dikenali`);
 }
 
+
+/* ---------- tenaga ----------
+   Gambar rajah aras tenaga seperti buku teks.
+   {jenis:"kimia", mod:"tenaga", bahan:"Zn + Cu²⁺", hasil:"Zn²⁺ + Cu",
+    dh:"ΔH = −210 kJ mol⁻¹", eksotermik:true, kapsyen, alt}
+   Eksotermik: bahan di atas, hasil di bawah. Endotermik: sebaliknya.
+   Anak panah sentiasa dari aras bahan ke aras hasil. */
+function tenaga(spec){
+  const eks = spec.eksotermik !== false;
+  pastiPanjang(spec.bahan || "", 22, "bahan"); pastiPanjang(spec.hasil || "", 22, "hasil");
+  pastiPanjang(spec.dh || "", 24, "ΔH");
+  if(!spec.bahan || !spec.hasil || !spec.dh) throw new Error("rajah tenaga perlu bahan, hasil dan dh");
+  const neg = /[−-]/.test(spec.dh.replace(/kJ mol[⁻-]¹|mol⁻¹/g, ""));
+  if(eks !== neg) throw new Error("tanda ΔH tidak sepadan dengan eksotermik/endotermik");
+  let isi = "";
+  const x0 = 30, yA = 40, yB = 128, xL = 46, xR = 290;
+  /* paksi tenaga */
+  isi += A.garis(x0, 150, x0, 12, { warna: "tinta2", tebal: 1.5, panah: true });
+  isi += A.teks(x0 - 4, 162, "Tenaga", { saiz: 11, warna: "tinta3" });
+  const yBahan = eks ? yA : yB, yHasil = eks ? yB : yA;
+  isi += A.garis(xL, yBahan, xR - 100, yBahan, { warna: "tinta", tebal: 2.2 });
+  isi += A.garis(xL + 100, yHasil, xR, yHasil, { warna: "tinta", tebal: 2.2 });
+  isi += A.teks(xL, yBahan - 7, spec.bahan, { saiz: 12, warna: "tinta" });
+  isi += A.teks(xR, yHasil - 7, spec.hasil, { saiz: 12, kanan: true, warna: "tinta" });
+  const xp = 168;
+  isi += A.garis(xp, yBahan + (eks ? 3 : -3), xp, yHasil + (eks ? -3 : 3), { warna: "merah", tebal: 1.8, panah: true });
+  const yt = (yA + yB) / 2 + 4;
+  isi += A.teks(xp + 7, yt, spec.dh, { saiz: 11, warna: "merah", tebal: true });
+  return { isi, tinggi: 172, lebar: 300 };
+}
+
 function lukis(spec){
   const mod = spec.mod || "atom";
   const h = mod === "atom" ? atom(spec) : mod === "sel" ? sel(spec)
+    : mod === "tenaga" ? tenaga(spec)
     : (() => { throw new Error(`mod kimia "${mod}" tidak dikenali`); })();
-  return A.figura({ lebar: LEBAR, tinggi: h.tinggi, isi: h.isi, alt: spec.alt, kapsyen: spec.kapsyen });
+  return A.figura({ lebar: h.lebar || LEBAR, tinggi: h.tinggi, isi: h.isi, alt: spec.alt, kapsyen: spec.kapsyen });
 }
 
 module.exports = { lukis, LEBAR };
