@@ -1,10 +1,10 @@
 /* Tangkapan skrin paparan murid untuk semakan visual (bukan ujian lulus/gagal).
      node tools/tangkap-skrin.js e1b1 [gelap]
-   Disimpan dalam ../jejakkimia-skrin/. Perlu pelayan 8833. */
+   Disimpan dalam ../jejaktpkimia-skrin/. Perlu pelayan 8833. */
 const { chromium } = require("playwright");
 const fs = require("fs");
 const bab = process.argv[2] || "k4b1", gelap = process.argv.includes("gelap");
-const KELUAR = "../jejakkimia-skrin/";
+const KELUAR = "../jejaktpkimia-skrin/";
 (async () => {
   let html = fs.readFileSync("index.html", "utf8");
   fs.writeFileSync("index-uji.html", html.replace("SOALAN_SET=6", "SOALAN_SET=9"));
@@ -22,7 +22,7 @@ const KELUAR = "../jejakkimia-skrin/";
   await p.screenshot({ path: KELUAR + bab + "-peta" + sfx + ".png", fullPage: false });
   const diambil = new Set();
   const ambil = async (k, penuh) => { if (diambil.has(k)) return; diambil.add(k); await p.screenshot({ path: KELUAR + bab + "-" + k + sfx + ".png", fullPage: !!penuh }); };
-  let lg = 1;
+  let lg = 1, tqLepas = "", sama = 0;
   await p.click('[data-f="stop-1"]').catch(() => {}); await p.waitForTimeout(500);
   for (let l = 0; l < 420; l++) {
     const soalan = await p.$(".qtext"), aksi = await p.$('[data-f="aksi"]');
@@ -46,6 +46,9 @@ const KELUAR = "../jejakkimia-skrin/";
     if (q.j === "pilih") await p.click(`[data-f="${ke(q.p[q.b])}"]`);
     else if (q.j === "banyak" || q.j === "susun") for (const i of q.b) await p.click(`[data-f="${ke(q.p[i])}"]`);
     else if (q.j === "isi") await p.fill('[data-f="isi"]', salahSengaja ? "wrongg" : q.b[0]);
+    else if (q.j === "nombor") { await p.fill('[data-f="num"]', String(q.b)); await ambil("nombor"); }
+    else if (q.j === "buka") { await p.fill('[data-f="buka"]', "Jawapan contoh untuk ujian main penuh. ".repeat(6)); await ambil("buka", true); }
+    if (tq === tqLepas) { if (++sama > 4) { console.log("TERSEKAT: " + tq); break; } } else { sama = 0; tqLepas = tq; }
     if (q.j === "susun") await ambil("susun");
     await p.waitForTimeout(100);
     await p.click('[data-f="aksi"]').catch(() => {}); await p.waitForTimeout(450);
