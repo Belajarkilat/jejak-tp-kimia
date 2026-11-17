@@ -1,8 +1,11 @@
 -- Rujukan lawatan (18 Okt 2026): lajur rujuk = hos laman yang membawa pelawat
 -- (document.referrer, tanpa www.), atau 'langsung' jika tiada, ditambah '|app-<nama>'
 -- jika dibuka dalam pelayar app (Facebook, Instagram, Threads, TikTok, Telegram, Line).
+-- Juga: jk_ping kini terima 'klik' (sebelum ini klik butang landing Kimia ditolak senyap).
 alter table jk_ping add column if not exists rujuk text not null default '';
-
+alter table jk_ping drop constraint if exists jk_ping_jenis_check;
+alter table jk_ping add constraint jk_ping_jenis_check
+  check (jenis = any (array['buka','hentian','ralat','lawat','klik']));
 drop function if exists public.jk_ping(text, text, text, integer, text);
 CREATE OR REPLACE FUNCTION public.jk_ping(p_jenis text, p_peranti text, p_bab text DEFAULT NULL::text, p_aras integer DEFAULT NULL::integer, p_nota text DEFAULT ''::text, p_rujuk text DEFAULT ''::text)
  RETURNS void

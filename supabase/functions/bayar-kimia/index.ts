@@ -14,7 +14,7 @@
 
    Rahsia (supabase secrets set ...):
      TOYYIB_SECRET    userSecretKey akaun toyyibPay (Nani)
-     TOYYIB_KATEGORI_KIMIA  categoryCode Sejarah (jatuh balik: TOYYIB_KATEGORI)
+     TOYYIB_KATEGORI_KIMIA  categoryCode Kimia (jatuh balik: TOYYIB_KATEGORI)
      TOYYIB_BASE      https://dev.toyyibpay.com (sandbox) | https://toyyibpay.com
      APP_URL          https://jejaktpsains.naikgred.com/
      PREFIX           lo (Sains) | jm (Matematik)
@@ -28,11 +28,11 @@ import { createHash } from "node:crypto";
 
 const env = (k: string, lalai = "") => Deno.env.get(k) ?? lalai;
 /* Jejak TP Kimia berkongsi projek Supabase dengan Matematik (pelan percuma: 2 projek),
-   jadi rahsia PREFIX/APP_URL/PRODUK projek itu milik Matematik. Nilai Sejarah ditetapkan di sini. */
-const P = "js";
+   jadi rahsia PREFIX/APP_URL/PRODUK projek itu milik Matematik. Nilai Kimia ditetapkan di sini. */
+const P = "jk";
 const BASE = env("TOYYIB_BASE", "https://dev.toyyibpay.com").replace(/\/$/, "");
 const RAHSIA = env("TOYYIB_SECRET");
-/* Kategori toyyibPay khas Sejarah; jika belum ditetapkan, guna kategori kongsi projek. */
+/* Kategori toyyibPay khas Kimia; jika belum ditetapkan, guna kategori kongsi projek. */
 const KATEGORI = env("TOYYIB_KATEGORI_KIMIA") || env("TOYYIB_KATEGORI");
 const APP_URL = "https://jejaktpkimia.naikgred.com/";
 const PRODUK = "Jejak TP Kimia";
@@ -51,11 +51,11 @@ const json = (data: unknown, status = 200) =>
   new Response(JSON.stringify(data), { status, headers: { ...CORS, "Content-Type": "application/json" } });
 
 const PERINGKAT: Record<string, string> = {
-  rendah: "Premium Sejarah Menengah Rendah selama 365 hari",
-  atas: "Premium Menengah Atas Tingkatan 4 hingga 5 selama 365 hari",
+  rendah: "Premium Kimia selama 365 hari",
+  atas: "Premium Kimia Tingkatan 4 hingga 5 selama 365 hari",
   /* Paket kelas: RM23 = 5 kelas tambahan, tiada tarikh tamat */
   kelas: "Tambahan 5 kelas guru",
-  panitia: "Pakej Panitia Tingkatan 1 hingga 5 selama 365 hari",
+  panitia: "Pakej Panitia Kimia Tingkatan 4 hingga 5 selama 365 hari",
 };
 const PAKEJ = ["kecil", "standard", "besar"];
 
